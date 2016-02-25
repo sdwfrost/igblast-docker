@@ -35,8 +35,8 @@ RUN apt-get update -qq && \
 RUN cd /home/docker && \
 	wget ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/1.4.0/ncbi-igblast-1.4.0-x64-linux.tar.gz && \
 	tar -zxvf ncbi-igblast-1.4.0-x64-linux.tar.gz && \
-  cd ncbi-igblast-1.4.0/bin && \
-  cp * /usr/local/bin/
+  	cd ncbi-igblast-1.4.0/bin && \
+  	cp * /usr/local/bin/
 
 # Now download databases and install to /usr/local/bin
 
